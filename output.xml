@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20200821 08:24:25.404" rpa="false">
-<suite id="s1" name="TimeOut" source="C:\Users\bashi\PycharmProjects\TestAutomation\TestCase\TimeOut.robot">
+<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20200821 08:32:31.810" rpa="false">
+<suite id="s1" name="ImplicitWait" source="C:\Users\bashi\PycharmProjects\TestAutomation\TestCase\ImplicitWait.robot">
 <test id="s1-t1" name="FaceForm">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the given ``url``.</doc>
@@ -8,47 +8,64 @@
 <arg>${url}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20200821 08:24:25.725" level="INFO">Opening browser 'chrome' to base url 'https://www.facebook.com/'.</msg>
-<status status="PASS" starttime="20200821 08:24:25.725" endtime="20200821 08:24:33.323"></status>
+<msg timestamp="20200821 08:32:32.215" level="INFO">Opening browser 'chrome' to base url 'https://www.facebook.com/'.</msg>
+<status status="PASS" starttime="20200821 08:32:32.215" endtime="20200821 08:32:39.860"></status>
 </kw>
-<kw name="Get Selenium Timeout" library="SeleniumLibrary">
-<doc>Gets the timeout that is used by various keywords.</doc>
+<kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Gets the implicit wait value used by Selenium.</doc>
 <assign>
-<var>${default_timeout}</var>
+<var>${implicit_wait}</var>
 </assign>
-<msg timestamp="20200821 08:24:33.327" level="INFO">${default_timeout} = 5 seconds</msg>
-<status status="PASS" starttime="20200821 08:24:33.326" endtime="20200821 08:24:33.327"></status>
+<msg timestamp="20200821 08:32:39.862" level="INFO">${implicit_wait} = 0 seconds</msg>
+<status status="PASS" starttime="20200821 08:32:39.862" endtime="20200821 08:32:39.862"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
-<arg>${default_timeout}</arg>
+<arg>${implicit_wait}</arg>
 </arguments>
-<status status="PASS" starttime="20200821 08:24:33.328" endtime="20200821 08:24:33.329"></status>
+<status status="PASS" starttime="20200821 08:32:39.863" endtime="20200821 08:32:39.864"></status>
 </kw>
-<kw name="Set Selenium Timeout" library="SeleniumLibrary">
-<doc>Sets the timeout that is used by various keywords.</doc>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
 <arguments>
 <arg>10 seconds</arg>
 </arguments>
-<status status="PASS" starttime="20200821 08:24:33.330" endtime="20200821 08:24:33.332"></status>
+<status status="PASS" starttime="20200821 08:32:39.864" endtime="20200821 08:32:39.866"></status>
 </kw>
-<kw name="Wait Until Page Contains" library="SeleniumLibrary">
-<doc>Waits until ``text`` appears on current page.</doc>
+<kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<assign>
+<var>${implicit_wait}</var>
+</assign>
+<msg timestamp="20200821 08:32:39.867" level="INFO">${implicit_wait} = 10 seconds</msg>
+<status status="PASS" starttime="20200821 08:32:39.867" endtime="20200821 08:32:39.867"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
 <arguments>
-<arg>Praveen</arg>
+<arg>${implicit_wait}</arg>
 </arguments>
+<status status="PASS" starttime="20200821 08:32:39.868" endtime="20200821 08:32:39.868"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:email1</arg>
+<arg>username</arg>
+</arguments>
+<msg timestamp="20200821 08:32:39.869" level="INFO">Typing text 'username' into text field 'id:email1'.</msg>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20200821 08:24:43.746" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200821 08:24:43.394" endtime="20200821 08:24:43.746"></status>
+<msg timestamp="20200821 08:32:50.290" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200821 08:32:49.917" endtime="20200821 08:32:50.290"></status>
 </kw>
-<msg timestamp="20200821 08:24:43.763" level="FAIL">Text 'Praveen' did not appear in 10 seconds.</msg>
-<status status="FAIL" starttime="20200821 08:24:33.333" endtime="20200821 08:24:43.763"></status>
+<msg timestamp="20200821 08:32:50.297" level="FAIL">Element with locator 'id:email1' not found.</msg>
+<status status="FAIL" starttime="20200821 08:32:39.869" endtime="20200821 08:32:50.297"></status>
 </kw>
-<status status="FAIL" starttime="20200821 08:24:25.724" endtime="20200821 08:24:43.778" critical="yes">Text 'Praveen' did not appear in 10 seconds.</status>
+<status status="FAIL" starttime="20200821 08:32:32.214" endtime="20200821 08:32:50.298" critical="yes">Element with locator 'id:email1' not found.</status>
 </test>
-<status status="FAIL" starttime="20200821 08:24:25.404" endtime="20200821 08:24:43.778"></status>
+<status status="FAIL" starttime="20200821 08:32:31.813" endtime="20200821 08:32:50.300"></status>
 </suite>
 <statistics>
 <total>
@@ -58,7 +75,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" id="s1" name="TimeOut">TimeOut</stat>
+<stat pass="0" fail="1" id="s1" name="ImplicitWait">ImplicitWait</stat>
 </suite>
 </statistics>
 <errors>
