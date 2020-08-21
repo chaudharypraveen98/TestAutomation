@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20200821 08:24:25.404" rpa="false">
+<suite id="s1" name="TimeOut" source="C:\Users\bashi\PycharmProjects\TestAutomation\TestCase\TimeOut.robot">
+<test id="s1-t1" name="FaceForm">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200821 08:24:25.725" level="INFO">Opening browser 'chrome' to base url 'https://www.facebook.com/'.</msg>
+<status status="PASS" starttime="20200821 08:24:25.725" endtime="20200821 08:24:33.323"></status>
+</kw>
+<kw name="Get Selenium Timeout" library="SeleniumLibrary">
+<doc>Gets the timeout that is used by various keywords.</doc>
+<assign>
+<var>${default_timeout}</var>
+</assign>
+<msg timestamp="20200821 08:24:33.327" level="INFO">${default_timeout} = 5 seconds</msg>
+<status status="PASS" starttime="20200821 08:24:33.326" endtime="20200821 08:24:33.327"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${default_timeout}</arg>
+</arguments>
+<status status="PASS" starttime="20200821 08:24:33.328" endtime="20200821 08:24:33.329"></status>
+</kw>
+<kw name="Set Selenium Timeout" library="SeleniumLibrary">
+<doc>Sets the timeout that is used by various keywords.</doc>
+<arguments>
+<arg>10 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20200821 08:24:33.330" endtime="20200821 08:24:33.332"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Praveen</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20200821 08:24:43.746" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200821 08:24:43.394" endtime="20200821 08:24:43.746"></status>
+</kw>
+<msg timestamp="20200821 08:24:43.763" level="FAIL">Text 'Praveen' did not appear in 10 seconds.</msg>
+<status status="FAIL" starttime="20200821 08:24:33.333" endtime="20200821 08:24:43.763"></status>
+</kw>
+<status status="FAIL" starttime="20200821 08:24:25.724" endtime="20200821 08:24:43.778" critical="yes">Text 'Praveen' did not appear in 10 seconds.</status>
+</test>
+<status status="FAIL" starttime="20200821 08:24:25.404" endtime="20200821 08:24:43.778"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="TimeOut">TimeOut</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
