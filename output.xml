@@ -1,81 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20200821 08:32:31.810" rpa="false">
-<suite id="s1" name="ImplicitWait" source="C:\Users\bashi\PycharmProjects\TestAutomation\TestCase\ImplicitWait.robot">
-<test id="s1-t1" name="FaceForm">
+<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20200821 17:34:07.369" rpa="false">
+<suite id="s1" name="MouseOperation" source="C:\Users\bashi\PycharmProjects\TestAutomation\TestCase\MouseOperation.robot">
+<test id="s1-t1" name="MouseTest">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the given ``url``.</doc>
 <arguments>
-<arg>${url}</arg>
+<arg>${url1}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20200821 08:32:32.215" level="INFO">Opening browser 'chrome' to base url 'https://www.facebook.com/'.</msg>
-<status status="PASS" starttime="20200821 08:32:32.215" endtime="20200821 08:32:39.860"></status>
+<msg timestamp="20200821 17:34:07.825" level="INFO">Opening browser 'chrome' to base url 'http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html'.</msg>
+<status status="PASS" starttime="20200821 17:34:07.825" endtime="20200821 17:34:13.424"></status>
 </kw>
-<kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
-<doc>Gets the implicit wait value used by Selenium.</doc>
-<assign>
-<var>${implicit_wait}</var>
-</assign>
-<msg timestamp="20200821 08:32:39.862" level="INFO">${implicit_wait} = 0 seconds</msg>
-<status status="PASS" starttime="20200821 08:32:39.862" endtime="20200821 08:32:39.862"></status>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200821 17:34:13.425" endtime="20200821 17:34:17.203"></status>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
 <arguments>
-<arg>${implicit_wait}</arg>
+<arg>2</arg>
 </arguments>
-<status status="PASS" starttime="20200821 08:32:39.863" endtime="20200821 08:32:39.864"></status>
+<msg timestamp="20200821 17:34:19.217" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200821 17:34:17.212" endtime="20200821 17:34:19.217"></status>
 </kw>
-<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
-<doc>Sets the implicit wait value used by Selenium.</doc>
+<kw name="Drag And Drop" library="SeleniumLibrary">
+<doc>Drags element identified by ``locator`` into ``target`` element.</doc>
 <arguments>
-<arg>10 seconds</arg>
+<arg>id:box5</arg>
+<arg>id:box101</arg>
 </arguments>
-<status status="PASS" starttime="20200821 08:32:39.864" endtime="20200821 08:32:39.866"></status>
+<status status="PASS" starttime="20200821 17:34:19.217" endtime="20200821 17:34:19.806"></status>
 </kw>
-<kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
-<doc>Gets the implicit wait value used by Selenium.</doc>
-<assign>
-<var>${implicit_wait}</var>
-</assign>
-<msg timestamp="20200821 08:32:39.867" level="INFO">${implicit_wait} = 10 seconds</msg>
-<status status="PASS" starttime="20200821 08:32:39.867" endtime="20200821 08:32:39.867"></status>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
 <arguments>
-<arg>${implicit_wait}</arg>
+<arg>2</arg>
 </arguments>
-<status status="PASS" starttime="20200821 08:32:39.868" endtime="20200821 08:32:39.868"></status>
+<msg timestamp="20200821 17:34:21.812" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200821 17:34:19.807" endtime="20200821 17:34:21.812"></status>
 </kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
 <arguments>
-<arg>id:email1</arg>
-<arg>username</arg>
+<arg>${url2}</arg>
 </arguments>
-<msg timestamp="20200821 08:32:39.869" level="INFO">Typing text 'username' into text field 'id:email1'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20200821 08:32:50.290" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200821 08:32:49.917" endtime="20200821 08:32:50.290"></status>
+<msg timestamp="20200821 17:34:21.813" level="INFO">Opening url 'https://swisnl.github.io/jQuery-contextMenu/demo.html'</msg>
+<status status="PASS" starttime="20200821 17:34:21.813" endtime="20200821 17:34:23.854"></status>
 </kw>
-<msg timestamp="20200821 08:32:50.297" level="FAIL">Element with locator 'id:email1' not found.</msg>
-<status status="FAIL" starttime="20200821 08:32:39.869" endtime="20200821 08:32:50.297"></status>
+<kw name="Open Context Menu" library="SeleniumLibrary">
+<doc>Opens context menu on element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:/html/body/div/section/div/div/div/p/span</arg>
+</arguments>
+<status status="PASS" starttime="20200821 17:34:23.855" endtime="20200821 17:34:24.232"></status>
 </kw>
-<status status="FAIL" starttime="20200821 08:32:32.214" endtime="20200821 08:32:50.298" critical="yes">Element with locator 'id:email1' not found.</status>
+<status status="PASS" starttime="20200821 17:34:07.824" endtime="20200821 17:34:24.234" critical="yes"></status>
 </test>
-<status status="FAIL" starttime="20200821 08:32:31.813" endtime="20200821 08:32:50.300"></status>
+<status status="PASS" starttime="20200821 17:34:07.374" endtime="20200821 17:34:24.239"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1">Critical Tests</stat>
-<stat pass="0" fail="1">All Tests</stat>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" id="s1" name="ImplicitWait">ImplicitWait</stat>
+<stat pass="1" fail="0" id="s1" name="MouseOperation">MouseOperation</stat>
 </suite>
 </statistics>
 <errors>
