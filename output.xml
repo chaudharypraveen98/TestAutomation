@@ -1,72 +1,254 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20200821 17:34:07.369" rpa="false">
-<suite id="s1" name="MouseOperation" source="C:\Users\bashi\PycharmProjects\TestAutomation\TestCase\MouseOperation.robot">
-<test id="s1-t1" name="MouseTest">
-<kw name="Open Browser" library="SeleniumLibrary">
-<doc>Opens a new browser instance to the given ``url``.</doc>
+<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20200822 23:46:43.863" rpa="false">
+<suite id="s1" name="ForLoop" source="C:\Users\bashi\PycharmProjects\TestAutomation\TestCase\ForLoop.robot">
+<test id="s1-t1" name="LoopTest">
+<kw name="${i} IN RANGE [ 1 | 11 ]" type="for">
+<kw name="${i} = 1" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
 <arguments>
-<arg>${url1}</arg>
-<arg>${browser}</arg>
+<arg>${i}</arg>
 </arguments>
-<msg timestamp="20200821 17:34:07.825" level="INFO">Opening browser 'chrome' to base url 'http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html'.</msg>
-<status status="PASS" starttime="20200821 17:34:07.825" endtime="20200821 17:34:13.424"></status>
+<status status="PASS" starttime="20200822 23:46:44.352" endtime="20200822 23:46:44.354"></status>
 </kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20200821 17:34:13.425" endtime="20200821 17:34:17.203"></status>
+<status status="PASS" starttime="20200822 23:46:44.352" endtime="20200822 23:46:44.354"></status>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
+<kw name="${i} = 2" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
 <arguments>
-<arg>2</arg>
+<arg>${i}</arg>
 </arguments>
-<msg timestamp="20200821 17:34:19.217" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20200821 17:34:17.212" endtime="20200821 17:34:19.217"></status>
+<status status="PASS" starttime="20200822 23:46:44.354" endtime="20200822 23:46:44.356"></status>
 </kw>
-<kw name="Drag And Drop" library="SeleniumLibrary">
-<doc>Drags element identified by ``locator`` into ``target`` element.</doc>
+<status status="PASS" starttime="20200822 23:46:44.354" endtime="20200822 23:46:44.356"></status>
+</kw>
+<kw name="${i} = 3" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
 <arguments>
-<arg>id:box5</arg>
-<arg>id:box101</arg>
+<arg>${i}</arg>
 </arguments>
-<status status="PASS" starttime="20200821 17:34:19.217" endtime="20200821 17:34:19.806"></status>
+<status status="PASS" starttime="20200822 23:46:44.356" endtime="20200822 23:46:44.357"></status>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" starttime="20200822 23:46:44.356" endtime="20200822 23:46:44.357"></status>
+</kw>
+<kw name="${i} = 4" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
 <arguments>
-<arg>2</arg>
+<arg>${i}</arg>
 </arguments>
-<msg timestamp="20200821 17:34:21.812" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20200821 17:34:19.807" endtime="20200821 17:34:21.812"></status>
+<status status="PASS" starttime="20200822 23:46:44.357" endtime="20200822 23:46:44.359"></status>
 </kw>
-<kw name="Go To" library="SeleniumLibrary">
-<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<status status="PASS" starttime="20200822 23:46:44.357" endtime="20200822 23:46:44.359"></status>
+</kw>
+<kw name="${i} = 5" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
 <arguments>
-<arg>${url2}</arg>
+<arg>${i}</arg>
 </arguments>
-<msg timestamp="20200821 17:34:21.813" level="INFO">Opening url 'https://swisnl.github.io/jQuery-contextMenu/demo.html'</msg>
-<status status="PASS" starttime="20200821 17:34:21.813" endtime="20200821 17:34:23.854"></status>
+<status status="PASS" starttime="20200822 23:46:44.359" endtime="20200822 23:46:44.360"></status>
 </kw>
-<kw name="Open Context Menu" library="SeleniumLibrary">
-<doc>Opens context menu on element identified by ``locator``.</doc>
+<status status="PASS" starttime="20200822 23:46:44.359" endtime="20200822 23:46:44.360"></status>
+</kw>
+<kw name="${i} = 6" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
 <arguments>
-<arg>xpath:/html/body/div/section/div/div/div/p/span</arg>
+<arg>${i}</arg>
 </arguments>
-<status status="PASS" starttime="20200821 17:34:23.855" endtime="20200821 17:34:24.232"></status>
+<status status="PASS" starttime="20200822 23:46:44.360" endtime="20200822 23:46:44.361"></status>
 </kw>
-<status status="PASS" starttime="20200821 17:34:07.824" endtime="20200821 17:34:24.234" critical="yes"></status>
+<status status="PASS" starttime="20200822 23:46:44.360" endtime="20200822 23:46:44.361"></status>
+</kw>
+<kw name="${i} = 7" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20200822 23:46:44.362" endtime="20200822 23:46:44.363"></status>
+</kw>
+<status status="PASS" starttime="20200822 23:46:44.362" endtime="20200822 23:46:44.363"></status>
+</kw>
+<kw name="${i} = 8" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20200822 23:46:44.363" endtime="20200822 23:46:44.365"></status>
+</kw>
+<status status="PASS" starttime="20200822 23:46:44.363" endtime="20200822 23:46:44.365"></status>
+</kw>
+<kw name="${i} = 9" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20200822 23:46:44.365" endtime="20200822 23:46:44.366"></status>
+</kw>
+<status status="PASS" starttime="20200822 23:46:44.365" endtime="20200822 23:46:44.366"></status>
+</kw>
+<kw name="${i} = 10" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20200822 23:46:44.366" endtime="20200822 23:46:44.367"></status>
+</kw>
+<status status="PASS" starttime="20200822 23:46:44.366" endtime="20200822 23:46:44.367"></status>
+</kw>
+<status status="PASS" starttime="20200822 23:46:44.352" endtime="20200822 23:46:44.367"></status>
+</kw>
+<kw name="${j} IN [ 1 | 2 | 3 | 4 | 5 ]" type="for">
+<kw name="${j} = 1" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${j}</arg>
+</arguments>
+<status status="PASS" starttime="20200822 23:46:44.368" endtime="20200822 23:46:44.369"></status>
+</kw>
+<status status="PASS" starttime="20200822 23:46:44.368" endtime="20200822 23:46:44.369"></status>
+</kw>
+<kw name="${j} = 2" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${j}</arg>
+</arguments>
+<status status="PASS" starttime="20200822 23:46:44.370" endtime="20200822 23:46:44.371"></status>
+</kw>
+<status status="PASS" starttime="20200822 23:46:44.370" endtime="20200822 23:46:44.371"></status>
+</kw>
+<kw name="${j} = 3" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${j}</arg>
+</arguments>
+<status status="PASS" starttime="20200822 23:46:44.371" endtime="20200822 23:46:44.372"></status>
+</kw>
+<status status="PASS" starttime="20200822 23:46:44.371" endtime="20200822 23:46:44.373"></status>
+</kw>
+<kw name="${j} = 4" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${j}</arg>
+</arguments>
+<status status="PASS" starttime="20200822 23:46:44.373" endtime="20200822 23:46:44.374"></status>
+</kw>
+<status status="PASS" starttime="20200822 23:46:44.373" endtime="20200822 23:46:44.374"></status>
+</kw>
+<kw name="${j} = 5" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${j}</arg>
+</arguments>
+<status status="PASS" starttime="20200822 23:46:44.374" endtime="20200822 23:46:44.375"></status>
+</kw>
+<status status="PASS" starttime="20200822 23:46:44.374" endtime="20200822 23:46:44.376"></status>
+</kw>
+<status status="PASS" starttime="20200822 23:46:44.368" endtime="20200822 23:46:44.376"></status>
+</kw>
+<kw name="${j} IN [ 1 2 3 4 5 ]" type="for">
+<kw name="${j} = 1 2 3 4 5" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${j}</arg>
+</arguments>
+<status status="PASS" starttime="20200822 23:46:44.377" endtime="20200822 23:46:44.377"></status>
+</kw>
+<status status="PASS" starttime="20200822 23:46:44.376" endtime="20200822 23:46:44.377"></status>
+</kw>
+<status status="PASS" starttime="20200822 23:46:44.376" endtime="20200822 23:46:44.379"></status>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>rahul</arg>
+<arg>praveen</arg>
+</arguments>
+<assign>
+<var>@{name_list}</var>
+</assign>
+<msg timestamp="20200822 23:46:44.380" level="INFO">@{name_list} = [ rahul | praveen ]</msg>
+<status status="PASS" starttime="20200822 23:46:44.380" endtime="20200822 23:46:44.380"></status>
+</kw>
+<kw name="${name} IN [ @{name_list} ]" type="for">
+<kw name="${name} = rahul" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${name}</arg>
+</arguments>
+<status status="PASS" starttime="20200822 23:46:44.384" endtime="20200822 23:46:44.385"></status>
+</kw>
+<status status="PASS" starttime="20200822 23:46:44.383" endtime="20200822 23:46:44.385"></status>
+</kw>
+<kw name="${name} = praveen" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${name}</arg>
+</arguments>
+<status status="PASS" starttime="20200822 23:46:44.385" endtime="20200822 23:46:44.386"></status>
+</kw>
+<status status="PASS" starttime="20200822 23:46:44.385" endtime="20200822 23:46:44.386"></status>
+</kw>
+<status status="PASS" starttime="20200822 23:46:44.383" endtime="20200822 23:46:44.386"></status>
+</kw>
+<status status="PASS" starttime="20200822 23:46:44.351" endtime="20200822 23:46:44.387" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20200821 17:34:07.374" endtime="20200821 17:34:24.239"></status>
+<test id="s1-t2" name="FORINTEST">
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>pencil</arg>
+<arg>eraser</arg>
+</arguments>
+<assign>
+<var>@{product_list}</var>
+</assign>
+<msg timestamp="20200822 23:46:44.393" level="INFO">@{product_list} = [ pencil | eraser ]</msg>
+<status status="PASS" starttime="20200822 23:46:44.392" endtime="20200822 23:46:44.393"></status>
+</kw>
+<kw name="${serial} | ${names} IN ENUMERATE [ @{product_list} ]" type="for">
+<kw name="${serial} = 0, ${names} = pencil" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${serial}</arg>
+<arg>${names}</arg>
+</arguments>
+<msg timestamp="20200822 23:46:44.396" level="FAIL">Invalid log level 'pencil'.</msg>
+<status status="FAIL" starttime="20200822 23:46:44.395" endtime="20200822 23:46:44.396"></status>
+</kw>
+<status status="FAIL" starttime="20200822 23:46:44.395" endtime="20200822 23:46:44.396"></status>
+</kw>
+<status status="FAIL" starttime="20200822 23:46:44.394" endtime="20200822 23:46:44.396"></status>
+</kw>
+<status status="FAIL" starttime="20200822 23:46:44.390" endtime="20200822 23:46:44.397" critical="yes">Invalid log level 'pencil'.</status>
+</test>
+<status status="FAIL" starttime="20200822 23:46:43.868" endtime="20200822 23:46:44.401"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0">Critical Tests</stat>
-<stat pass="1" fail="0">All Tests</stat>
+<stat pass="1" fail="1">Critical Tests</stat>
+<stat pass="1" fail="1">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" id="s1" name="MouseOperation">MouseOperation</stat>
+<stat pass="1" fail="1" id="s1" name="ForLoop">ForLoop</stat>
 </suite>
 </statistics>
 <errors>
