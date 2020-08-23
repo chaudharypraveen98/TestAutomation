@@ -29,6 +29,6 @@ FORINTEST
     #this will enumerate the list
     @{product_list}=     Create List    pencil  eraser
     FOR     ${serial}   ${names}     IN ENUMERATE    @{product_list}
-        log     ${serial}   ${names}
+        log to console    ${serial} ${names}
     END
 *** Keywords ***
