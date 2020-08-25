@@ -16,4 +16,5 @@ GetAllLinkTest
         append to list  ${all_links}  ${link}
     END
     log     ${all_links}
+    close browser
 *** Keywords ***
