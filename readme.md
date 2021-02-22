@@ -18,3 +18,6 @@ How to use:-
 2. run the following command in terminal:-
 <br>Sample:-   `robot TestCase/<name_of_test_case>.robot`
 <br>Example:- `robot TestCase/ForLoop.robot`
+
+#### Note  
+Feel free to make changes and make pull request. 
